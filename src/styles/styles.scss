@@ -1,0 +1,184 @@
+$font-stack: Helvetica Neue, Arial, sans-serif;
+// $primary-color: rgb(213, 106, 162);
+// $secondary-color: rgb(194, 59, 198);
+$primary-color: rgb(0,112,186);
+$secondary-color: rgb(255, 193, 50);
+$light-blue-color: rgb(230, 241, 252);
+$dark-blue-color: rgb(0,80,152);
+$text-color: rgb(255, 255, 255);
+$font-size: 14px;
+$pink-color: rgb(205, 20, 57);
+
+// $button-color: rgb(0, 140, 186);
+// $hover-color: #008CBA; 
+
+//navbar 
+.navbar {
+  margin-bottom: 30px;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: $primary-color;
+  }
+
+  li {
+    float: left;
+  }
+
+  li a {
+    display: block;
+    color: $text-color;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  li a:hover:not(.active) {
+    background-color: $primary-color;
+  }
+
+  .active {
+    background-color: $secondary-color;
+  }
+}
+//end navbar
+
+.product_image:hover {
+  transform: scale(1);
+  transition: 0.5s;
+  box-shadow: 0 4px 8px 1px rgba(0, 140, 186, 0.5);
+}
+
+.product_name {
+  color: $primary-color;
+}
+
+.add_to_cart {
+  color: $text-color;
+  background-color: $primary-color;
+  border: transparent;
+  border-radius: 5px;
+  padding: 5px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.add_to_cart:hover {
+background-color: $dark-blue-color;
+box-shadow: 0 4px 8px 1px rgba(0, 140, 186, 0.5);
+
+}
+
+.store_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.product_wrapper {
+  margin-right: 40px;
+  margin-bottom: 40px;
+  cursor: pointer;
+}
+
+.product_price {
+  color: $primary-color;
+}
+
+.cart {
+float: right;
+}
+
+.cart_image {
+  border: transparent;
+  border-radius: 10px;
+  padding: 0;
+  margin: 0;
+}
+
+.cart_image:hover {
+  box-shadow: 0 4px 8px 1px rgba(0, 140, 186, 0.5);
+  cursor: pointer;
+  }
+
+.cart_button {
+  display: block;
+  height: 60px;  
+  width: 60px;
+  background-color: $text-color;
+  cursor: pointer;
+}
+
+table {
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 80%;
+  border: 1px solid $dark-blue-color;
+}
+
+thead {
+  background-color: $dark-blue-color;
+}
+
+th, td {
+  font-size: 14px;
+  color: rgba(0,0,0,.87);
+}
+
+td, th {
+  border: 1px solid $dark-blue-color;
+  padding: 13px 11px;
+  overflow: hidden;
+  width: 20%;
+  word-wrap: break-word;
+}
+
+table tr:hover {
+  background-color: $dark-blue-color;
+}
+
+//category styles
+.flexLayout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  width: 100%;
+  padding-top: 50px;
+}
+
+.app_name {
+  margin-left: 5px;
+  color: #2c2e2f;
+font-size: 30px;
+font-weight: inherit;
+}
+
+.add_to_cart {
+  cursor: pointer;
+}
+
+//footer
+.footer {
+  background-color: $dark-blue-color;
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  color: $text-color;
+}
+
+.footer {
+  p {
+    margin-right: 10px;
+  }
+}
+
+
