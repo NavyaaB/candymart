@@ -10,7 +10,7 @@ export default function Product({ cart, setAddToCart }) {
   let [totalPrice, setTotalPrice] = useState(0);
 
   const handleAddToCart = (detail) => {
-    console.log("1111111details", detail);
+    // console.log("details", detail);
     totalPrice += detail.price;
 
     if (cart.some((cartItem) => cartItem.id === detail.id)) {
@@ -29,14 +29,14 @@ export default function Product({ cart, setAddToCart }) {
 
     setAddToCart((cart) => [...cart, { ...detail, quantity: 1 }]);
     setTotalPrice(totalPrice);
-    console.log(cart, totalPrice);
+    // console.log(cart, totalPrice);
   };
 
   function getFilteredCategories() {
     const res = categoryData.filter((item) => {
       return item.category_url_item === filterBy;
     });
-    console.log(2222, res);
+    //console.log('res', res);
     return res;
   }
 

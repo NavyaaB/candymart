@@ -1,0 +1,29 @@
+
+.card {
+    --s: 106px/* size */;
+    --m: 20px/* margin */;
+    width: var(--s);
+    margin: var(--m);
+    height: calc(var(--s)*1.1547);
+    line-height: calc(var(--s)*1.1547);
+    position: relative;
+    display: inline-block;
+    font-size: initial;
+    clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+    background: radial-gradient(#009cde 26%, #003087 81%, #009cde 100%);
+    margin-bottom: calc(var(--m) - var(--s)*0.2885);
+}
+.cardLabel {
+    text-align: center;
+    font-weight: bold;
+    cursor: help;
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+
+.linkText {
+    text-align: center !important;
+    min-width: 0;
+}

@@ -28,10 +28,8 @@ export default function Slider() {
   let [arrayIndex, setArrayIndex] = useState(0);
 
   const onNext = () => {
-    console.log(arrayIndex);
     if (arrayIndex < SLIDES.length - 1) {
       arrayIndex = arrayIndex + 1;
-      console.log(arrayIndex);
       setArrayIndex(arrayIndex);
     } else {
       setArrayIndex(0);
@@ -39,10 +37,8 @@ export default function Slider() {
   };
 
   const onPrev = () => {
-    console.log(arrayIndex);
     if (arrayIndex > 0) {
       arrayIndex = arrayIndex - 1;
-      console.log(arrayIndex);
       setArrayIndex(arrayIndex);
     } else {
       setArrayIndex(0);

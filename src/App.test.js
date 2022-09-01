@@ -1,11 +1,11 @@
 import { render, screen } from "@testing-library/react";
 import renderer from "react-test-renderer";
 
-import productsData from "./data/productsData";
+import categoryData from "./data/categoryData";
 import App from "./App";
 
-const numOfProducts = productsData.length;
-const nameOfProduct = productsData[0].name;
+const numOfProducts = categoryData.length;
+const nameOfProduct = categoryData[0].name;
 
 test("App snapshot test", () => {
   const component = renderer.create(<App />);
@@ -20,36 +20,36 @@ test("renders learn react link", () => {
 });
 //2 number
 
-test("Number of items = 15", () => {
-  expect(numOfProducts).toBe(15);
+test("Number of items = 9", () => {
+  expect(numOfProducts).toBe(9);
 });
 //3 number
-test("Number of items to be greater than or equal to 12", () => {
-  expect(numOfProducts).toBeGreaterThanOrEqual(12);
+test("Number of items to be greater than or equal to 8", () => {
+  expect(numOfProducts).toBeGreaterThanOrEqual(8);
 });
 //4 string
-test("There is a ca in product name", () => {
-  expect(nameOfProduct).toMatch(/ca/);
+test("There is a Choc in product name", () => {
+  expect(nameOfProduct).toMatch(/Choc/);
 });
 //5
-test("The product name should contain cake", () => {
-  expect(nameOfProduct).toContain("cake");
+test("The product name should contain Choclates", () => {
+  expect(nameOfProduct).toContain("Choclates");
 });
 //6 arrays
 
 describe("array tests", () => {
-  const data2 = ["cake"];
-  test("The list of products contains cake", () => {
-    expect(["cake"]).toEqual(expect.arrayContaining(data2));
+  const data2 = ["choclate"];
+  test("The list of products contains choclate", () => {
+    expect(["choclate"]).toEqual(expect.arrayContaining(data2));
   });
 });
 //7 objects-ckeck the key
 describe("object tests", () => {
   test("The list of products to have a property name", () => {
-    expect(productsData[0]).toHaveProperty("name");
+    expect(categoryData[0]).toHaveProperty("name");
   });
   //8 objects - key and value
-  test("The first product to have a property price and value of 20", () => {
-    expect(productsData[0]).toHaveProperty("price", 20);
+  test("The first product to have a property url item and value of CandyBars", () => {
+    expect(categoryData[0]).toHaveProperty("category_url_item", "CandyBars");
   });
 });

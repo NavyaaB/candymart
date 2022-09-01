@@ -11,7 +11,7 @@ export default function Category() {
   const routeChangeToDetails = (category_type) => {
     let path = `/category/${category_type}`;
     navigate(path);
-    console.log("candy_type selected : ", category_type);
+    // console.log("candy_type selected : ", category_type);
   };
 
   useEffect(() => {
