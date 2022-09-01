@@ -6,21 +6,22 @@ function NavBar() {
     <div className='navbar'>
       <ul>
         <li>
-          <a href='#home'>My Store</a>
+          <Link to='/'>Candymart</Link>
         </li>
         <li>
-          <a href='#about'>About</a>
+          <Link to='/about_contact'>About</Link>
         </li>
         <li>
-          <a href='#contact'>Contact</a>
+          <Link to='/about_contact'>Contact</Link>
         </li>
         <li style={{ float: "right" }}>
           <Link to='/cart'>
-            <img
+            {/* <img
               className='cart_button active'
               src='https://www.phoca.cz/images/projects/phoca-cart-r.svg'
               alt='cart_image'
-            />
+            /> */}
+            Cart
           </Link>
         </li>
       </ul>

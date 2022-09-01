@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar";
 import Product from "./components/Product";
 import Footer from "./components/Footer";
 import Cart from "./components/Cart";
+import AboutAndContact from "./components/AboutAndContact";
 
 export default function App() {
   const [cart, setAddToCart] = useState([]);
@@ -24,9 +25,10 @@ export default function App() {
             path='/cart'
             element={<Cart cart={cart} setAddToCart={setAddToCart} />}
           />
+          <Route path='/about_contact' element={<AboutAndContact />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
-      <Footer />
     </div>
   );
 }

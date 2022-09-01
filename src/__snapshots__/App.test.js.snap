@@ -8,21 +8,24 @@ exports[`App snapshot test 1`] = `
     <ul>
       <li>
         <a
-          href="#home"
+          href="/"
+          onClick={[Function]}
         >
-          My Store
+          Candymart
         </a>
       </li>
       <li>
         <a
-          href="#about"
+          href="/about_contact"
+          onClick={[Function]}
         >
           About
         </a>
       </li>
       <li>
         <a
-          href="#contact"
+          href="/about_contact"
+          onClick={[Function]}
         >
           Contact
         </a>
@@ -38,11 +41,7 @@ exports[`App snapshot test 1`] = `
           href="/cart"
           onClick={[Function]}
         >
-          <img
-            alt="cart_image"
-            className="cart_button active"
-            src="https://www.phoca.cz/images/projects/phoca-cart-r.svg"
-          />
+          Cart
         </a>
       </li>
     </ul>

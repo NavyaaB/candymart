@@ -1,6 +1,4 @@
 $font-stack: Helvetica Neue, Arial, sans-serif;
-// $primary-color: rgb(213, 106, 162);
-// $secondary-color: rgb(194, 59, 198);
 $primary-color: rgb(0,112,186);
 $secondary-color: rgb(255, 193, 50);
 $light-blue-color: rgb(230, 241, 252);
@@ -8,13 +6,15 @@ $dark-blue-color: rgb(0,80,152);
 $text-color: rgb(255, 255, 255);
 $font-size: 14px;
 $pink-color: rgb(205, 20, 57);
-
-// $button-color: rgb(0, 140, 186);
-// $hover-color: #008CBA; 
+$smoke-color: 	rgb(224, 224, 224);
 
 //navbar 
 .navbar {
   margin-bottom: 30px;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
 
   ul {
     list-style-type: none;
@@ -81,6 +81,30 @@ box-shadow: 0 4px 8px 1px rgba(0, 140, 186, 0.5);
   margin-bottom: 100px;
 }
 
+.cart_container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.order_id, .order_date {
+  align-self: flex-end
+}
+
+.hexContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-bottom: 100px;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
 .product_wrapper {
   margin-right: 40px;
   margin-bottom: 40px;
@@ -118,21 +142,21 @@ float: right;
 table {
   border-collapse: collapse;
   table-layout: fixed;
-  width: 80%;
-  border: 1px solid $dark-blue-color;
+  margin: 0 10%;
+  border: 1px solid $primary-color;
 }
 
 thead {
-  background-color: $dark-blue-color;
+  background-color: $primary-color;
 }
 
 th, td {
   font-size: 14px;
-  color: rgba(0,0,0,.87);
+  color: #2c2e2f;
 }
 
 td, th {
-  border: 1px solid $dark-blue-color;
+  border: 1px solid $primary-color;
   padding: 13px 11px;
   overflow: hidden;
   width: 20%;
@@ -140,7 +164,7 @@ td, th {
 }
 
 table tr:hover {
-  background-color: $dark-blue-color;
+  background-color: $smoke-color;
 }
 
 //category styles

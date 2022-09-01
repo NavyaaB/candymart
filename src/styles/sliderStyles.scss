@@ -32,11 +32,22 @@
 
 .title {
     color: white;
-    font-size: 40px;
+    font-size: 30px;
     margin-top: 30px;
+    margin-bottom: 0;
 }
 
 .text {
-    font-size: 30px;
+    font-size: 40px;
     color: white;
+    margin: 0;
+}
+
+@media only screen and (max-width: 400px) {
+    .text, .title {
+        font-size: 20px;
+    }
+    .text {
+        margin: 5%;
+    }
 }

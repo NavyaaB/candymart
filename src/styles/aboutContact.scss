@@ -1,0 +1,98 @@
+$font-size: 25px;
+$primary-color: rgb(0, 112, 186);
+$secondary-color: rgb(253, 253, 150);
+$text-color: rgb(255, 255, 255);
+.about {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+
+}
+.panel_container {
+    width: 650px;
+    height: auto;
+    border: 1.5pt solid $primary-color;
+    border-radius: 15px;
+    background-color: #ffffff;
+}
+
+header {
+    background-color: $primary-color;
+    border: 1.5pt $primary-color;
+    height: 175px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.header_section {
+    color: $text-color;
+    padding-top: 10%;
+    font-size: $font-size;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h3 {
+    margin: 0;
+    float: left;
+    margin-right: 10px;
+}
+
+.toggleIcon {
+    height: 40px;
+    width: 40px;
+}
+
+.search_section {
+    display: flex;
+    justify-content: flex-end;
+    margin: 15px;
+}
+
+label {
+    font-weight: normal;
+    color: #2c2e2f;
+}
+
+.new_icon {
+    float: left;
+}
+
+.item a {
+    color: #2c2e2f;
+    font-size: $font-size;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.item p {
+    color: #2c2e2f;
+    font-size: $font-size;
+}
+
+.data_icon_content {
+    display: flex;
+}
+
+.data_icon {
+    float: left;
+}
+
+.item_main {
+    margin-bottom: 40px;
+}
+
+.item_main:hover {
+    background-color: $secondary-color;
+}
+
+.item {
+    margin-left: 75px;
+}
+
+.subject {
+    text-decoration: underline;
+    font-size: 20px;
+    font-weight: 600;
+}
