@@ -15,9 +15,10 @@ export default function Category() {
   };
 
   useEffect(() => {
-    c_data = c_data.sort((a, b) => a.name.localeCompare(b.name));
-    setCData(c_data);
-  });
+    // c_data = c_data.sort((a, b) => a.name.localeCompare(b.name));
+    // setCData(c_data);
+    setCData(c_data.sort((a, b) => a.name.localeCompare(b.name)));
+  }, [c_data]);
 
   const list = categoryData.map((category) => (
     <div
